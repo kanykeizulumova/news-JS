@@ -36,6 +36,13 @@ export default [
             "class-methods-use-this": "off",
             "@typescript-eslint/no-explicit-any": "error",
         },
+        settings: {
+            "import/resolver": {
+                node: {
+                    extensions: [".js", ".jsx", ".ts", ".tsx"],
+                },
+            },
+        },
     },
     eslintConfigPrettier,
 ];
